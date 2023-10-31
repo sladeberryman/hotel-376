@@ -20,10 +20,11 @@ body {
 footer {
     background-color: #f8f9fa;
     color: #6c757d;
-    position: fixed;
+    position: relative;
     left: 0;
     bottom: 0;
     width: 100%;
+    margin-top: 50px;
 }
 
 footer h6 {
