@@ -10,13 +10,13 @@ $(document).ready(function() {
   
     // Display the submitted data in the results container
     var resultsContainer = $('#results-container');
-    resultsContainer.append('<p>Email: ' + email + '</p>');
-    resultsContainer.append('<p>Favorite Class: ' + favoriteClass + '</p>');
-    resultsContainer.append('<p>Mood: ' + mood + '</p>');
-    resultsContainer.append('<p>Rant: ' + rant + '</p>');
-    resultsContainer.append('<p>Living Situation: ' + livingSituation + '</p>');
-    resultsContainer.append('<p>Customization Options: ' + customizationOptions + '</p>');
-    resultsContainer.append('<p>Birthday: ' + birthday + '</p>');
+    resultsContainer.append('<p><strong>Email</strong>: ' + email + '</p>');
+    resultsContainer.append('<p><strong>Favorite Class</strong>: ' + favoriteClass + '</p>');
+    resultsContainer.append('<p><strong>Mood</strong>: ' + mood + '</p>');
+    resultsContainer.append('<p><strong>Rant</strong>: ' + rant + '</p>');
+    resultsContainer.append('<p><strong>Living Situation</strong>: ' + livingSituation + '</p>');
+    resultsContainer.append('<p><strong>Parking Options</strong>: ' + customizationOptions + '</p>');
+    resultsContainer.append('<p><strong>Birthday</strong>: ' + birthday + '</p>');
   
     // Clear the stored data from localStorage
     localStorage.clear();
