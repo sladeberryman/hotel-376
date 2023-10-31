@@ -1,3 +1,54 @@
+
+
+body {
+    background-color: #f8f9fa;
+}
+
+.navbar {
+    background-color: #343a40;
+    color: #fff;
+}
+
+.container {
+    max-width: 500px;
+    margin: 50px auto;
+}
+
+
 footer {
-    padding-top: 5px;
+    background-color: #f8f9fa;
+    color: #6c757d;
+    position: relative;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    margin-top: 50px;
+}
+
+footer h6 {
+    color: #343a40;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+footer ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+footer ul li {
+    margin-bottom: 5px;
+}
+
+footer ul li a {
+    color: #6c757d;
+}
+
+footer ul li a:hover {
+    color: #343a40;
+}
+
+footer .py-3 {
+    background-color: #343a40;
+    color: #fff;
 }
