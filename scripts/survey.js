@@ -1,6 +1,6 @@
 $(document).ready(function() {
     $('form').submit(function(event) {
-      event.preventDefault(); // Prevent the form from submitting
+      event.preventDefault(); // Prevent the form from submitting default
   
       // Get the values entered by the user
       var email = $('#email-input').val();
@@ -10,6 +10,7 @@ $(document).ready(function() {
       var livingSituation = $('input[name="radio"]:checked').val();
       var customizationOptions = [];
   
+      // Special loop to fetch checkboxes
       $('input[name="checkbox"]:checked').each(function() {
         customizationOptions.push($(this).val());
       });
@@ -22,6 +23,7 @@ $(document).ready(function() {
       localStorage.setItem('mood', mood);
       localStorage.setItem('rant', rant);
       localStorage.setItem('livingSituation', livingSituation);
+      // join customization options with comma
       localStorage.setItem('customizationOptions', customizationOptions.join(', '));
       localStorage.setItem('birthday', birthday);
   
