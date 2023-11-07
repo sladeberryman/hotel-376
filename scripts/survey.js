@@ -60,4 +60,36 @@ $(document).ready(function() {
       // Redirect to the survey results page
       window.location.href = 'survey_results.html';
     });
+
+    ///////////////// Code below populated fields
+
+    // get data with fetch
+    fetch('lib/favs.json')
+    .then(function(response) {
+      return response.json();
+    })
+    .then(function(data) {
+      // Access the properties from the JSON data
+      var favoriteClass = data.class;
+      var mood = data.mood;
+      var rant = data.rant;
+      var livingSituation = data.living;
+      var customizationOptions = data.options;
+      var birthday = data.birthday;
+
+      // Handle the button click event
+      $('#populate-button').click(function() {
+        // Populate the form elements with data
+        $('#dropdown').val(favoriteClass);
+        $('#text-input').val(mood);
+        $('#textarea').val(rant);
+
+        // check batcave box
+        $('#checkbox3').prop('checked', true);
+        
+      });
+    })
+    .catch(function(error) {
+      console.log('Error:', error);
+    });
 });
